@@ -21,13 +21,17 @@ class MailController extends \Configs\Controller
       );
       $yield = str_replace(array_keys($data_partial), array_values($data_partial), $partial[$lang]);
       //str_replace layout
+      $activation_url = $content['base_url'] . 'user/activate_account/' . $data->{'user_id'} . '/' . $data->{'activation_key'};
+      $terms_and_conditions = $content['base_url'] . 'resources/terms_and_conditions/' . $lang;
+      $tutorial = $content['base_url'] . 'resources/tutorial/' . $lang;
       $data_layout = array(
         '%yield' => $yield,
         '%base_url' => $content['base_url'],
         '%language' => $lang,
         '%name' => $data->{'name'},
-        '%activation_key' => $data->{'activation_key'},
-        '%user_id' => $data->{'user_id'},
+        '%activation_url' => $activation_url,
+        '%terms_and_conditions' => $terms_and_conditions,
+        '%tutorial' => $tutorial,
       );
       $message = str_replace(array_keys($data_layout), array_values($data_layout), $layout);
       //

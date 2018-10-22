@@ -6,7 +6,7 @@ $sp = <<<EOD
       <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
           <tr>
               <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                  <h1 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 25px; line-height: 30px; color: #333333; font-weight: normal;"><b>%demo</b> Praesent laoreet malesuada&nbsp;cursus.</h1>
+                  <h1 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 25px; line-height: 30px; color: #333333; font-weight: normal;">Bienvenido <b>%name</b> a Consulting Ya</h1>
                   <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.</p>
               </td>
           </tr>
@@ -16,7 +16,7 @@ $sp = <<<EOD
                   <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
                       <tr>
                           <td class="button-td button-td-primary" style="border-radius: 4px; background: #222222;">
-                               <a class="button-a button-a-primary" href="https://google.com/" style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 0px;">Activar Cuenta</a>
+                               <a class="button-a button-a-primary" href="%activation_url" style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 0px;">Activar Cuenta</a>
                           </td>
                       </tr>
                   </table>
@@ -48,14 +48,14 @@ $sp = <<<EOD
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px; text-align: left;">
                       <tr>
                           <td style="text-align: center; padding: 0 10px;">
-                              <a href="http://google.com.pe/">
+                              <a href="%terms_and_conditions">
                                   <img src="https://via.placeholder.com/200" width="200" height="" alt="alt_text" border="0" style="width: 100%; max-width: 200px; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
                               </a>
                           </td>
                       </tr>
                       <tr>
                           <td style="text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0;">
-                             <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+                             <p style="margin: 0; text-align:center;">Términos y Condiciones</p>
                           </td>
                       </tr>
                   </table>
@@ -64,14 +64,14 @@ $sp = <<<EOD
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px; text-align: left;">
                       <tr>
                           <td style="text-align: center; padding: 0 10px;">
-                              <a href="http://actualidad.rt.com/">
+                              <a href="%tutorial">
                                   <img src="https://via.placeholder.com/200" width="200" height="" alt="alt_text" border="0" style="width: 100%; max-width: 200px; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
                               </a>
                           </td>
                       </tr>
                       <tr>
                           <td style="text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0;">
-                              <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+                              <p style="margin: 0; text-align:center;">Manual de Uso</p>
                           </td>
                       </tr>
                   </table>
@@ -88,7 +88,7 @@ $en = <<<EOD
       <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
           <tr>
               <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
-                  <h1 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 25px; line-height: 30px; color: #333333; font-weight: normal;"><b>%demo</b>Praesent laoreet malesuada&nbsp;cursus.</h1>
+                  <h1 style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 25px; line-height: 30px; color: #333333; font-weight: normal;">Wellcome <b>%name</b> to Consulting Ya</h1>
                   <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.</p>
               </td>
           </tr>
@@ -98,7 +98,7 @@ $en = <<<EOD
                   <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
                       <tr>
                           <td class="button-td button-td-primary" style="border-radius: 4px; background: #222222;">
-                               <a class="button-a button-a-primary" href="https://google.com/" style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 0px;">Activate Account</a>
+                               <a class="button-a button-a-primary" href="%activation_url" style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 0px;">Activate Account</a>
                           </td>
                       </tr>
                   </table>
@@ -130,14 +130,14 @@ $en = <<<EOD
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px; text-align: left;">
                       <tr>
                           <td style="text-align: center; padding: 0 10px;">
-                              <a href="http://google.com.pe/">
+                              <a href="%terms_and_conditions">
                                   <img src="https://via.placeholder.com/200" width="200" height="" alt="alt_text" border="0" style="width: 100%; max-width: 200px; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
                               </a>
                           </td>
                       </tr>
                       <tr>
                           <td style="text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0;">
-                             <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+                             <p style="margin: 0; text-align:center;">Terms and Conditions</p>
                           </td>
                       </tr>
                   </table>
@@ -146,14 +146,14 @@ $en = <<<EOD
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px; text-align: left;">
                       <tr>
                           <td style="text-align: center; padding: 0 10px;">
-                              <a href="http://actualidad.rt.com/">
+                              <a href="%tutorial">
                                   <img src="https://via.placeholder.com/200" width="200" height="" alt="alt_text" border="0" style="width: 100%; max-width: 200px; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
                               </a>
                           </td>
                       </tr>
                       <tr>
                           <td style="text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px 10px 0;">
-                              <p style="margin: 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend dolor.</p>
+                              <p style="margin: 0; text-align:center;">User Manual.</p>
                           </td>
                       </tr>
                   </table>
