@@ -27,3 +27,4 @@ Fuentes:
 + https://stackoverflow.com/questions/36521233/slim-3-middleware-redirect
 + https://github.com/slimphp/Slim-Skeleton
 + https://www.slimframework.com/docs/v3/cookbook/enable-cors.html
++ http://php.net/manual/es/function.vsprintf.php
