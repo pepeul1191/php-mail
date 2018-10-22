@@ -11,7 +11,7 @@ class MailController extends \Configs\Controller
       //post data
       $data = json_decode($request->getParam('data'));
       //mail builder
-      $content = require __DIR__ . '/../contents/wellcome_mail_content.php';
+      $content = require __DIR__ . '/../contents/mail_wellcome_content.php';
       $layout = require __DIR__ . '/../templates/mail/layout_mail.php';
       $partial = require __DIR__ . '/../templates/mail/partial_wellcome.php';
       $lang = 'sp';

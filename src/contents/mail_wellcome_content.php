@@ -13,5 +13,5 @@ return [
     'subject' => 'Welcome to Consulting Ya',
     'from' => 'Support <support@consultingya.com>',
   ],
-  'base_url' => 'http://localhost:3050/',
+  'base_url' => 'http://softweb.pe/mail/',
 ];
