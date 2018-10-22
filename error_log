@@ -1,0 +1,7 @@
+[10-Feb-2015 11:27:31 America/Chicago] PHP Parse error:  syntax error, unexpected '$mensaje' (T_VARIABLE) in /home3/josuemoi/public_html/mail/index.php on line 13
+[22-Oct-2018 12:22:57 America/Chicago] PHP Warning:  mail(): Could not execute mail delivery program '/usr/sbin/sendmail -t -i' in /home3/josuemoi/public_html/mail/index.php on line 38
+[22-Oct-2018 12:22:57 America/Chicago] PHP Warning:  mail(): Could not execute mail delivery program '/usr/sbin/sendmail -t -i' in /home3/josuemoi/public_html/mail/index.php on line 38
+[22-Oct-2018 12:22:57 America/Chicago] PHP Warning:  mail(): Could not execute mail delivery program '/usr/sbin/sendmail -t -i' in /home3/josuemoi/public_html/mail/index.php on line 38
+[22-Oct-2018 12:22:57 America/Chicago] PHP Warning:  mail(): Could not execute mail delivery program '/usr/sbin/sendmail -t -i' in /home3/josuemoi/public_html/mail/index.php on line 38
+[22-Oct-2018 12:22:57 America/Chicago] PHP Warning:  mail(): Could not execute mail delivery program '/usr/sbin/sendmail -t -i' in /home3/josuemoi/public_html/mail/index.php on line 38
+[22-Oct-2018 12:22:57 America/Chicago] PHP Warning:  mail(): Could not execute mail delivery program '/usr/sbin/sendmail -t -i' in /home3/josuemoi/public_html/mail/index.php on line 38
