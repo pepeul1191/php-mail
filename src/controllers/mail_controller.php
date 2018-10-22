@@ -8,7 +8,8 @@ class MailController extends \Configs\Controller
     $rpta = '';
     $status = 200;
     try {
-      $rpta = '=P';
+      $layout = require __DIR__ . '/../templates/mail/layout_mail.php';
+      $rpta = $layout;
     }catch (Exception $e) {
       $status = 500;
       $rpta = json_encode(
