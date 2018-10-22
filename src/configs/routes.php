@@ -14,4 +14,4 @@ $app->get('/demo/[{name}]', function (Request $request, Response $response, arra
 //error
 $app->get('/error/access/{numero}', ErrorController::class . ':access');
 //mail
-$app->get('/mail/wellcome', MailController::class . ':wellcome')->add($mw_session_true);
+$app->post('/wellcome', MailController::class . ':wellcome')->add($mw_ambiente_csrf);

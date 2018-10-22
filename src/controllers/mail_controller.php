@@ -8,6 +8,9 @@ class MailController extends \Configs\Controller
     $rpta = '';
     $status = 200;
     try {
+      //post data
+      $data = json_decode($request->getParam('data'));
+      //mail builder
       $content = require __DIR__ . '/../contents/wellcome_mail_content.php';
       $layout = require __DIR__ . '/../templates/mail/layout_mail.php';
       $partial = require __DIR__ . '/../templates/mail/partial_wellcome.php';
@@ -20,16 +23,20 @@ class MailController extends \Configs\Controller
       //str_replace layout
       $data_layout = array(
         '%yield' => $yield,
-        '%demo' => $content[$lang]['demo'],
+        '%base_url' => $content['base_url'],
+        '%language' => $lang,
+        '%name' => $data->{'name'},
+        '%activation_key' => $data->{'activation_key'},
+        '%user_id' => $data->{'user_id'},
       );
       $message = str_replace(array_keys($data_layout), array_values($data_layout), $layout);
       //
-      $to      = 'info@softweb.pe';
-      $subject = 'Correo de Prueba';
+      $to      = $data->{'to'};
+      $subject = $content[$lang]['subject'];
       // To send HTML mail, the Content-type header must be set
       $headers  = 'MIME-Version: 1.0' . "\r\n";
       $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-      $headers .= 'From: jvaldivia@softweb.pe';
+      $headers .= 'From: ' . $content[$lang]['from'];
       mail($to, $subject, $message, $headers);
     }catch (Exception $e) {
       $status = 500;
@@ -46,5 +53,7 @@ class MailController extends \Configs\Controller
     return $response->withStatus($status)->write($rpta);
   }
 }
+
+
 
 ?>
