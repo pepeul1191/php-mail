@@ -9,3 +9,5 @@ public/dist
 .DS_Store
 *.ods#
 Gemfile.lock
+.htaccess-*
+error_log
