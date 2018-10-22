@@ -11,3 +11,4 @@ public/dist
 Gemfile.lock
 .htaccess-*
 error_log
+php.ini
