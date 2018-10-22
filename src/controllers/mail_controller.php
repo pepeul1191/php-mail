@@ -22,7 +22,16 @@ class MailController extends \Configs\Controller
         '%yield' => $yield,
         '%demo' => $content[$lang]['demo'],
       );
-      $rpta = str_replace(array_keys($data_layout), array_values($data_layout), $layout);
+      $message = str_replace(array_keys($data_layout), array_values($data_layout), $layout);
+      //
+      $to      = 'info@softweb.pe';
+      $subject = 'Correo de Prueba';
+      $message = 'Hola</br>Att. Tu Zulo.';
+      // To send HTML mail, the Content-type header must be set
+      $headers  = 'MIME-Version: 1.0' . "\r\n";
+      $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+      $headers .= 'From: jvaldivia@softweb.pe';
+      mail($to, $subject, $message, $headers);
     }catch (Exception $e) {
       $status = 500;
       $rpta = json_encode(
