@@ -15,3 +15,4 @@ $app->get('/demo/[{name}]', function (Request $request, Response $response, arra
 $app->get('/error/access/{numero}', ErrorController::class . ':access');
 //mail
 $app->post('/wellcome', MailController::class . ':wellcome')->add($mw_ambiente_csrf);
+$app->post('/reset_password', MailController::class . ':resetPassword')->add($mw_ambiente_csrf);
