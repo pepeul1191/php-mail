@@ -10,6 +10,7 @@ class MailController extends \Configs\Controller
     try {
       //post data
       $data = json_decode($request->getParam('data'));
+      //var_dump($data);exit();
       //mail builder
       $content = require __DIR__ . '/../contents/mail_wellcome_content.php';
       $layout = require __DIR__ . '/../templates/mail/layout_mail.php';
@@ -34,6 +35,7 @@ class MailController extends \Configs\Controller
         '%tutorial' => $tutorial,
       );
       $message = str_replace(array_keys($data_layout), array_values($data_layout), $layout);
+      //echo $message; exit();
       //
       $to      = $data->{'to'};
       $subject = $content[$lang]['subject'];
