@@ -1,38 +1,38 @@
 {
-	"id": "d4829cf5-1071-d9c3-957e-5d3fcf62ae1c",
-	"name": "Mail",
-	"description": "",
-	"order": [
-		"1f355b19-146a-2457-6af5-2d9aa6b39231"
-	],
-	"folders": [],
-	"folders_order": [],
-	"timestamp": 1540249867250,
-	"owner": 0,
-	"public": false,
-	"requests": [
+	"variables": [],
+	"info": {
+		"name": "Mail",
+		"_postman_id": "e9adb1da-8b79-6238-d4b3-32c9ba69e702",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
 		{
-			"id": "1f355b19-146a-2457-6af5-2d9aa6b39231",
-			"headers": "",
-			"headerData": [],
-			"url": "",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "d4829cf5-1071-d9c3-957e-5d3fcf62ae1c",
-			"data": null,
-			"dataMode": "params",
 			"name": "Mail Wellcome",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1540249869961,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {}
+			"request": {
+				"url": "softweb.pe/mail/wellcome",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "data",
+							"value": "{\"user_id\":7,\"activation_key\":\"ajkldfklasdjfio7128934u12kl3j\",\"name\":\"Pepe Valdivia\",\"lang\":\"en\",\"to\":\"info@softweb.pe\"}",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }

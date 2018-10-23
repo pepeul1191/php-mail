@@ -15,7 +15,7 @@ class MailController extends \Configs\Controller
       $content = require __DIR__ . '/../contents/mail_wellcome_content.php';
       $layout = require __DIR__ . '/../templates/mail/layout_mail.php';
       $partial = require __DIR__ . '/../templates/mail/partial_wellcome.php';
-      $lang = 'sp';
+      $lang = $data->{'lang'};
       //str_replace yiled
       $data_partial = array(
         '%demo' => $content[$lang]['demo'],
@@ -59,7 +59,5 @@ class MailController extends \Configs\Controller
     return $response->withStatus($status)->write($rpta);
   }
 }
-
-
 
 ?>
