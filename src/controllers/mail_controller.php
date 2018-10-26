@@ -22,7 +22,7 @@ class MailController extends \Configs\Controller
       );
       $yield = str_replace(array_keys($data_partial), array_values($data_partial), $partial[$lang]);
       //str_replace layout
-      $activation_url = $content['base_url'] . 'login/activate_account/' . $data->{'user_id'} . '/' . $data->{'activation_key'};
+      $activation_url = $content['base_url'] . 'user/activate_account/' . $data->{'user_id'} . '/' . $data->{'activation_key'};
       $terms_and_conditions = $content['base_url'] . 'resources/terms_and_conditions/' . $lang;
       $tutorial = $content['base_url'] . 'resources/tutorial/' . $lang;
       $data_layout = array(
@@ -77,7 +77,7 @@ class MailController extends \Configs\Controller
       );
       $yield = str_replace(array_keys($data_partial), array_values($data_partial), $partial[$lang]);
       //str_replace layout
-      $reset_url = $content['base_url'] . 'login/reset_password/' . $data->{'user_id'} . '/' . $data->{'reset_key'};
+      $reset_url = $content['base_url'] . 'user/reset_password/' . $data->{'user_id'} . '/' . $data->{'reset_key'};
       $data_layout = array(
         '%yield' => $yield,
         '%base_url' => $content['base_url'],

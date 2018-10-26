@@ -33,6 +33,33 @@
 				"description": ""
 			},
 			"response": []
+		},
+		{
+			"name": "Mail Activation",
+			"request": {
+				"url": "softweb.pe/mail/wellcome",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "data",
+							"value": "{\"user_id\":7,\"activation_key\":\"ajkldfklasdjfio7128934u12kl3j\",\"name\":\"Pepe Valdivia\",\"lang\":\"en\",\"to\":\"info@softweb.pe\"}",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
