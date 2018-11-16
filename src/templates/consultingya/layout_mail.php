@@ -188,15 +188,15 @@ return <<<EOD
 
 </head>
 <!--
-  The email background color (#222222) is defined in three places:
+  The email background color (#f5f5f5) is defined in three places:
   1. body tag: for most email clients
   2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
   3. mso conditional: For Windows 10 Mail
 -->
-<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
-  <center style="width: 100%; background-color: #222222;">
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f5f5f5;">
+  <center style="width: 100%; background-color: #f5f5f5;">
   <!--[if mso | IE]>
-  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #222222;">
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f5f5f5;">
   <tr>
   <td>
   <![endif]-->

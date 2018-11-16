@@ -18,5 +18,6 @@ $app->get('/error/access/{numero}', ErrorController::class . ':access');
 $app->post('/wellcome', MailController::class . ':wellcome')->add($mw_ambiente_csrf);
 $app->post('/reset_password', MailController::class . ':resetPassword')->add($mw_ambiente_csrf);
 //consulting_ya
+$app->get('/consultingya/demo', ConsultingyaController::class . ':demo')->add($mw_ambiente_csrf);
 $app->post('/consultingya/wellcome', ConsultingyaController::class . ':wellcome')->add($mw_ambiente_csrf);
 $app->post('/consultingya/reset_password', ConsultingyaController::class . ':resetPassword')->add($mw_ambiente_csrf);
