@@ -85,7 +85,7 @@ class ConsultingyaController extends \Configs\Controller
       $data_layout = array(
         '%yield' => $yield,
         '%base_url' => $data->{'base_url'},
-        '%mailbase_url' => $content['mail_url'],
+        '%mailbase_url' => $settings['settings']['constants']['static_url'],
         '%language' => $lang,
         '%name' => $data->{'name'},
         '%activation_url' => $activation_url,
@@ -141,6 +141,7 @@ class ConsultingyaController extends \Configs\Controller
         '%base_url' => $data->{'base_url'},
         '%language' => $lang,
         '%reset_url' => $reset_url,
+        '%mailbase_url' => $settings['settings']['constants']['static_url'],
       );
       $message = str_replace(array_keys($data_layout), array_values($data_layout), $layout);
       //echo $message; exit();
