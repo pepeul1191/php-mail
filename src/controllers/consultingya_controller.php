@@ -10,9 +10,9 @@ class ConsultingyaController extends \Configs\Controller
     try {
       //post data
       $data = json_decode('{"user_id":1,"reset_key":"lkadjflkajdflkajdflkajdsklfjadlkfjñakdf","lang":"sp","to":"demo@softweb.pe","base_url":"http://localhost:3050/"}');
+      $settings = require __DIR__ . '/../configs/settings.php';
       //var_dump($data);exit();
       //mail builder
-      $settings = require __DIR__ . '/../configs/settings.php';
       $content = require __DIR__ . '/../contents/consultingya_wellcome_content.php';
       $layout = require __DIR__ . '/../templates/consultingya/layout_mail.php';
       $partial = require __DIR__ . '/../templates/consultingya/partial_wellcome.php';
@@ -67,6 +67,7 @@ class ConsultingyaController extends \Configs\Controller
     try {
       //post data
       $data = json_decode($request->getParam('data'));
+      $settings = require __DIR__ . '/../configs/settings.php';
       //var_dump($data);exit();
       //mail builder
       $content = require __DIR__ . '/../contents/consultingya_wellcome_content.php';
@@ -123,6 +124,7 @@ class ConsultingyaController extends \Configs\Controller
     try {
       //post data
       $data = json_decode($request->getParam('data'));
+      $settings = require __DIR__ . '/../configs/settings.php';
       //var_dump($data);exit();
       //mail builder
       $content = require __DIR__ . '/../contents/consultingya_reset_password_content.php';
