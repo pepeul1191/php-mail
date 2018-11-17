@@ -9,9 +9,10 @@ class ConsultingyaController extends \Configs\Controller
     $status = 200;
     try {
       //post data
-      $data = json_decode('{"user_id":1,"reset_key":"lkadjflkajdflkajdflkajdsklfjadlkfjñakdf","lang":"sp","to":"demo@softweb.pe","base_url":"http://softweb.pe/"}');
+      $data = json_decode('{"user_id":1,"reset_key":"lkadjflkajdflkajdflkajdsklfjadlkfjñakdf","lang":"sp","to":"demo@softweb.pe","base_url":"http://localhost:3050/"}');
       //var_dump($data);exit();
       //mail builder
+      $settings = require __DIR__ . '/../configs/settings.php';
       $content = require __DIR__ . '/../contents/consultingya_wellcome_content.php';
       $layout = require __DIR__ . '/../templates/consultingya/layout_mail.php';
       $partial = require __DIR__ . '/../templates/consultingya/partial_wellcome.php';
@@ -22,13 +23,13 @@ class ConsultingyaController extends \Configs\Controller
       );
       $yield = str_replace(array_keys($data_partial), array_values($data_partial), $partial[$lang]);
       //str_replace layout
-      $activation_url = $data->{'base_url'} . 'user/activate_account/' . $data->{'user_id'} . '/' . $data->{'activation_key'};
+      $activation_url = $data->{'base_url'} . 'user/activate_account/' . $data->{'user_id'} . '/' . $data->{'reset_key'};
       $terms_and_conditions = $data->{'base_url'} . 'resources/terms_and_conditions/' . $lang;
       $tutorial = $data->{'base_url'} . 'resources/tutorial/' . $lang;
       $data_layout = array(
         '%yield' => $yield,
         '%base_url' => $data->{'base_url'},
-        '%mailbase_url' => $content['mail_url'],
+        '%mailbase_url' => $settings['settings']['constants']['static_url'],
         '%language' => $lang,
         '%name' => $data->{'name'},
         '%activation_url' => $activation_url,

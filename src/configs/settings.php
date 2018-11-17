@@ -14,8 +14,8 @@ return [
       'level' => \Monolog\Logger::DEBUG,
     ],
     'constants' => [
-      'base_url' => 'http://softweb.pe/mail/',
-      'static_url' => 'http://softweb.pe/mail/public/',
+      'base_url' => 'http://localhost:8080/',
+      'static_url' => 'http://localhost:8080/public/',
       'ambiente_static' => 'desarrollo',
       'ambiente_csrf' => 'inactivo',
       'ambiente_session' => 'inactivo',

@@ -231,7 +231,7 @@ return <<<EOD
               <!-- Email Header : BEGIN -->
               <tr>
                   <td style="padding: 20px 0; text-align: center">
-                      <img src="https://via.placeholder.com/200x50" width="200" height="50" alt="alt_text" border="0" style="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+                      <img src="%mailbase_urlconsultingya/logo200x50.png" width="200" height="50" alt="alt_text" border="0" style="height: auto; background: transparent; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
                   </td>
               </tr>
               <!-- Email Header : END -->
@@ -239,7 +239,7 @@ return <<<EOD
               <!-- Hero Image, Flush : BEGIN -->
               <tr>
                   <td style="background-color: #ffffff;">
-                      <img src="https://via.placeholder.com/1200x600" width="600" height="" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto;" class="g-img">
+                      <img src="%mailbase_urlconsultingya/logo1200x600.png" width="600" height="" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto;" class="g-img">
                   </td>
               </tr>
               <!-- Hero Image, Flush : END -->
@@ -295,7 +295,7 @@ return <<<EOD
       </div>
 
       <!-- Full Bleed Background Section : BEGIN -->
-      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #709f2b;">
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #348e7f;">
           <tr>
               <td valign="top">
                   <div align="center" style="max-width: 600px; margin: auto;" class="email-container">
