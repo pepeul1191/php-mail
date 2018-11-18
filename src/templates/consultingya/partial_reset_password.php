@@ -15,8 +15,8 @@ $sp = <<<EOD
                   <!-- Button : BEGIN -->
                   <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
                       <tr>
-                          <td class="button-td button-td-primary" style="border-radius: 4px; background: #222222;">
-                               <a class="button-a button-a-primary" href="%reset_url" style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 0px;">Restablecer Contraseña</a>
+                          <td class="button-td button-td-primary" style="border-radius: 4px; background: #4b506c;">
+                               <a class="button-a button-a-primary" href="%reset_url" style="background: #4b506c; border: 1px solid #4b506c; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 0px;">Restablecer Contraseña</a>
                           </td>
                       </tr>
                   </table>
@@ -54,8 +54,8 @@ $en = <<<EOD
                   <!-- Button : BEGIN -->
                   <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
                       <tr>
-                          <td class="button-td button-td-primary" style="border-radius: 4px; background: #222222;">
-                               <a class="button-a button-a-primary" href="%reset_url" style="background: #222222; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 0px;">Restore password</a>
+                          <td class="button-td button-td-primary" style="border-radius: 4px; background: #4b506c;">
+                               <a class="button-a button-a-primary" href="%reset_url" style="background: #4b506c; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 0px;">Restore password</a>
                           </td>
                       </tr>
                   </table>
