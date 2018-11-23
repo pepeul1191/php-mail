@@ -4,12 +4,12 @@
 
 return [
   'sp' => [
-    'subject' => 'Restablecer Contraseña de Consulting Ya',
-    'from' => 'Soporte <support@consultingya.com>',
+    'subject' => 'Restablecer Contraseña de Reservaciones de Canchas',
+    'from' => 'Soporte <support@resevacionesdecanchas.com>',
   ],
   'en' => [
-    'subject' => 'Restore your Password of Consulting Ya',
-    'from' => 'Support <support@consultingya.com>',
+    'subject' => 'Restore your Password of Reservaciones de Canchas',
+    'from' => 'Support <support@resevacionesdecanchas.com>',
   ],
   'base_url' => 'http://46.101.247.35:3050/',
 ];
