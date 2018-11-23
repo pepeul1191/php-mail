@@ -1,0 +1,32 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Mail",
+		"_postman_id": "96e56147-3855-796a-83cd-5c1cea050144",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://softweb.pe/mail/consultingya/wellcome",
+			"request": {
+				"url": "http://softweb.pe/mail/consultingya/wellcome",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "data",
+							"value": "{\"activation_key\":\"VlqVUoDyCUXcJdNhHhAXsDYBvoSOKmafLANtQKuL\",\"user_id\":39,\"name\":\"Pepe Valdivia\",\"base_url\":\"http://localhost:8080/\",\"to\":\"info@softweb.pe\",\"lang\":\"sp\"}",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Correo de bienvenida con activation link"
+			},
+			"response": []
+		}
+	]
+}

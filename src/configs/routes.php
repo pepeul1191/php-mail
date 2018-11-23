@@ -5,6 +5,7 @@ use Slim\Http\Response;
 use Controller\ErrorController;
 use Controller\MailController;
 use Controller\ConsultingyaController;
+use Controller\CanchasController;
 // Routes
 $app->get('/demo/[{name}]', function (Request $request, Response $response, array $args) {
   // Sample log message
@@ -21,3 +22,6 @@ $app->post('/reset_password', MailController::class . ':resetPassword')->add($mw
 $app->get('/consultingya/demo', ConsultingyaController::class . ':demo')->add($mw_ambiente_csrf);
 $app->post('/consultingya/wellcome', ConsultingyaController::class . ':wellcome')->add($mw_ambiente_csrf);
 $app->post('/consultingya/reset_password', ConsultingyaController::class . ':resetPassword')->add($mw_ambiente_csrf);
+//canchas
+$app->post('/canchas/wellcome_provider', CanchasController::class . ':wellcomeProvider')->add($mw_ambiente_csrf);
+$app->post('/canchas/reset_password', CanchasController::class . ':resetPassword')->add($mw_ambiente_csrf);
