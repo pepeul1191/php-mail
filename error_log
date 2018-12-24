@@ -56,3 +56,10 @@
 [22-Oct-2018 15:42:30 America/Chicago] PHP Warning:  mail(): Could not execute mail delivery program '/usr/sbin/sendmail -t -i' in /home3/josuemoi/public_html/mail/src/controllers/mail_controller.php on line 33
 [22-Oct-2018 15:42:30 America/Chicago] PHP Warning:  mail(): Could not execute mail delivery program '/usr/sbin/sendmail -t -i' in /home3/josuemoi/public_html/mail/src/controllers/mail_controller.php on line 33
 [22-Oct-2018 15:45:35 America/Chicago] PHP Warning:  mail(): Could not execute mail delivery program '/usr/sbin/sendmail -t -i' in /home3/josuemoi/public_html/mail/src/controllers/mail_controller.php on line 33
+[24-Dec-2018 16:09:23 America/Chicago] PHP Fatal error:  Cannot use temporary expression in write context in /home3/josuemoi/public_html/mail/src/controllers/chanchas_controller.php on line 123
+[24-Dec-2018 16:12:11 America/Chicago] PHP Warning:  Creating default object from empty value in /home3/josuemoi/public_html/mail/src/controllers/chanchas_controller.php on line 123
+[24-Dec-2018 16:22:58 America/Chicago] PHP Warning:  Creating default object from empty value in /home3/josuemoi/public_html/mail/src/controllers/chanchas_controller.php on line 123
+[24-Dec-2018 16:23:14 America/Chicago] PHP Warning:  Creating default object from empty value in /home3/josuemoi/public_html/mail/src/controllers/chanchas_controller.php on line 123
+[24-Dec-2018 16:31:10 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home3/josuemoi/public_html/mail/src/controllers/chanchas_controller.php on line 123
+[24-Dec-2018 16:32:42 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home3/josuemoi/public_html/mail/src/controllers/chanchas_controller.php on line 123
+[24-Dec-2018 16:33:45 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home3/josuemoi/public_html/mail/src/controllers/chanchas_controller.php on line 123

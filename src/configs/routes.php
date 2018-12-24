@@ -23,5 +23,8 @@ $app->get('/consultingya/demo', ConsultingyaController::class . ':demo')->add($m
 $app->post('/consultingya/wellcome', ConsultingyaController::class . ':wellcome')->add($mw_ambiente_csrf);
 $app->post('/consultingya/reset_password', ConsultingyaController::class . ':resetPassword')->add($mw_ambiente_csrf);
 //canchas
+$app->post('/canchas/password/create', CanchasController::class . ':createPassword')->add($mw_ambiente_csrf);
+$app->get('/canchas/wellcome_change_password/demo', CanchasController::class . ':wellcomeChangePasswordDemo')->add($mw_ambiente_csrf);
 $app->post('/canchas/wellcome_provider', CanchasController::class . ':wellcomeProvider')->add($mw_ambiente_csrf);
+$app->post('/canchas/wellcome_player', CanchasController::class . ':wellcomeProvider')->add($mw_ambiente_csrf);
 $app->post('/canchas/reset_password', CanchasController::class . ':resetPassword')->add($mw_ambiente_csrf);
