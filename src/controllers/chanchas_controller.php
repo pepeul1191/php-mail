@@ -134,7 +134,7 @@ class CanchasController extends \Configs\Controller
       );
       $yield = str_replace(array_keys($data_partial), array_values($data_partial), $partial[$lang]);
       //str_replace layout
-      $activation_url = $data->{'base_url'} . 'user/reset_password/' . $data->{'user_id'} . '/' . $data->{'activation_key'};
+      $activation_url = $data->{'base_url'} . 'user/password/create/' . $data->{'user_id'} . '/' . $data->{'activation_key'};
       $data_layout = array(
         '%yield' => $yield,
         '%base_url' => $data->{'base_url'},
@@ -192,7 +192,7 @@ class CanchasController extends \Configs\Controller
       );
       $yield = str_replace(array_keys($data_partial), array_values($data_partial), $partial[$lang]);
       //str_replace layout
-      $activation_url = $data->{'base_url'} . 'user/create_password/' . $data->{'user_id'} . '/' . $data->{'activation_key'};
+      $activation_url = $data->{'base_url'} . 'user/password/create/' . $data->{'user_id'} . '/' . $data->{'activation_key'};
       $data_layout = array(
         '%yield' => $yield,
         '%base_url' => $data->{'base_url'},
